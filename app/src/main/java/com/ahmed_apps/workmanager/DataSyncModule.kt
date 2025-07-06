@@ -7,9 +7,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-/**
- * @author Ahmed Guedmioui
- */
+
 @Module
 @InstallIn(SingletonComponent::class)
 object DataSyncModule {
@@ -17,7 +15,7 @@ object DataSyncModule {
     @Provides
     @Singleton
     fun providesDataSyncRepository(
-        application: Application
+        application: Application,
     ): DataSyncRepository {
         return DataSyncRepository(application)
     }

@@ -3,11 +3,8 @@ package com.ahmed_apps.workmanager
 import android.app.Application
 import kotlinx.coroutines.delay
 
-/**
- * @author Ahmed Guedmioui
- */
 class DataSyncRepository(
-    application: Application
+    application: Application,
 ) {
 
     suspend fun syncData() {
