@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.ahmed_apps.workmanager"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.ahmed_apps.workmanager"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 26
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -32,8 +32,9 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
+
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -85,6 +86,9 @@ dependencies {
     implementation(libs.dagger.hilt.navigation.compose)
 }
 
+kapt {
+    correctErrorTypes = true
+}
 
 
 
